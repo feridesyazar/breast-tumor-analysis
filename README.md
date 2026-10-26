@@ -35,10 +35,6 @@ Results from the test split (`random_state=42`, `stratify=y`):
 The test set contains 114 samples. The model correctly predicted 111; **3 malignant samples were classified as benign**. These results are specific to this dataset and split.
 
 
-## Limitations
-
-The dataset is small and the model is evaluated on only one train/test split. Performance may change on other data. Feature importance does not establish causality. **Do not use this educational model to make medical decisions.**
-
 ## Tools
 
 Python · Pandas · Matplotlib · Seaborn · Scikit-learn · Jupyter Notebook
