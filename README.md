@@ -2,18 +2,14 @@
 
 This project uses measurements from cell images to classify breast tumor samples as **benign (B)** or **malignant (M)**. We explore the data, train a **Random Forest** classifier, and evaluate its predictions with simple Python code.
 
-> **Educational project only.** The model is not a medical screening or diagnosis tool.
-
 ## Dataset
 
-- **Source:** [Breast Cancer Wisconsin (Diagnostic) – Kaggle](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)
 - **File:** `data.csv`
 - **Samples:** 569 (357 benign, 212 malignant)
 - **Raw columns:** 33, including the target, sample ID, and one empty column
 - **Model features:** 30 numeric measurements
 - **Target:** `diagnosis` (`B = 0`, `M = 1`)
 
-The `id` and empty `Unnamed: 32` columns are excluded from the model.
 
 ## Project Steps
 
@@ -38,23 +34,6 @@ Results from the test split (`random_state=42`, `stratify=y`):
 
 The test set contains 114 samples. The model correctly predicted 111; **3 malignant samples were classified as benign**. These results are specific to this dataset and split.
 
-## Run Locally
-
-1. Download `data.csv` from the Kaggle source above.
-2. Place it in the same folder as `Breast_Cancer_Classification.ipynb`.
-3. Install the libraries if needed:
-
-```bash
-pip install notebook pandas matplotlib seaborn scikit-learn
-```
-
-4. Open the notebook in Jupyter and run the cells in order.
-
-```python
-import pandas as pd
-
-df = pd.read_csv('data.csv')
-```
 
 ## Limitations
 
